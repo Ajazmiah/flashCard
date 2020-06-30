@@ -58,7 +58,7 @@ function deleteCard(e) {
 
 const width = cardWrapper.clientWidth;
 var translate = 0;
-// const cards = []
+const cards = []
 ////////////////////////////////////
 //////// FORM ON SUBMIT
 form.addEventListener('submit', function(e) {
