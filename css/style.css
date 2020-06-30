@@ -1,0 +1,179 @@
+*{
+  margin: 0;
+  padding: 0;
+
+}
+html, body{
+  height: 100%;
+}
+body{
+  background: #000000d9;
+}
+header{background: #fff;}
+main{
+
+  width: 100%;
+  margin:  10rem auto;
+
+}
+.buttons{
+  display: flex;
+
+  width: 40%;
+  margin: 0 auto;
+  justify-content: space-around;
+
+ }
+.card__btn-new,
+.card__btn-old{
+
+  flex: 1 48%;
+  padding: 1rem;
+  border: none;
+  outline: none;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+
+}
+.card__btn-new{
+  margin-right: 1%;
+  background: #8a2be2c7;
+}
+.card__btn-old {
+  margin-left: 1%;
+  background: #D84315;
+}
+
+/*==============================*/
+.card-wrapper{
+
+  margin: 2rem auto;
+  position: relative;
+  height: 17rem;
+  display: flex;
+  width: 30rem;
+  overflow: hidden;
+}
+.All-Cards{
+  width: 100%;
+  display: flex;
+  perspective: 600rem;
+  transform: translateX(0);
+  transition: .5s;
+
+}
+
+.card{
+  background: #fff;
+  height: 100%;
+  width: 100%;
+  transform-style: preserve-3d;
+  transition: all .7s ease;
+  cursor: pointer;
+  flex: 0 0 100%;
+  position: relative;
+}
+.card:nth-child(odd){
+  background: #67ca67;
+}
+.card:hover {
+  transform: rotateX(180deg);
+}
+.card-side{
+  display: flex;
+justify-content: center;
+align-items: center;
+color: #000;
+}
+.card-front{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  backface-visibility: hidden;
+
+}
+.card-back{
+
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  backface-visibility: hidden;
+
+
+  transform: rotateX(180deg);
+
+
+}
+/*================================*/
+.form-div {
+  display: flex;
+  justify-content: center;
+  width: 40%;
+  margin: 1rem auto;
+}
+.showForm{display: flex;}
+.form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.input{
+  padding: 1rem;
+  border: none;
+  outline: none;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+}
+#submit{
+  padding: .7rem;
+  outline: navajowhite;
+  border: navajowhite;
+  background: #673AB7;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  width: 10rem;
+  margin: 0 auto;
+}
+/*****===========================*/
+
+
+.card-box:hover .card-box_side1{
+  transform: rotateY(180deg);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.cardNavBtns button{
+  width: 5rem;
+    border: navajowhite;
+    outline: none;
+    padding: 1rem;
+    box-sizing: border-box;
+    background: #1565C0;
+    color: #fff;
+    border-radius: 5px;
+}
+.cardNavBtns{
+  text-align: center;
+    /* position: absolute; */
+    transform: translateY(-130%);
+}
+
+
+
+.next{
+
+}
