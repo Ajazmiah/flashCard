@@ -58,7 +58,7 @@ function deleteCard(e) {
 
 const width = cardWrapper.clientWidth;
 var translate = 0;
-const cards = []
+const cards = [];
 ////////////////////////////////////
 //////// FORM ON SUBMIT
 form.addEventListener('submit', function(e) {
@@ -111,6 +111,7 @@ const next = () => {
     const card = document.getElementsByClassName('card');
     const cardsArr = Array.from(card)
     let lastCard = cardsArr.length * (-width);
+    console.log(width)
 
     if (lastCard != translate - width) {
         translate = translate - width;
