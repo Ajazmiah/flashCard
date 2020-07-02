@@ -76,7 +76,10 @@ main{
 .card:nth-child(odd){
   background: #67ca67;
 }
-.card:hover {
+/* .card:hover {
+  transform: rotateX(180deg);
+} */
+.card.flip{
   transform: rotateX(180deg);
 }
 .card-side{
@@ -144,7 +147,7 @@ color: #000;
 }
 
 .cardNavBtns button{
-  width: 5rem;
+    width: 5rem;
     border: navajowhite;
     outline: none;
     padding: 1rem;

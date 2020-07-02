@@ -36,11 +36,12 @@ function display() {
      });
     }
 }
+const card = document.querySelectorAll('.card');
 // DELETE
 function deleteCard(e) {
   e.preventDefault();
   let width = cardWrapper.clientWidth;
-  const card = document.querySelectorAll('.card');
+  // const card = document.querySelectorAll('.card');
   let savedCards = JSON.parse(localStorage.getItem('cards'));
 
   card.forEach((item, i) => {
@@ -134,3 +135,11 @@ Validation = () => {
     else
       return true;
 }
+
+
+/////Toggles card flip on click/////
+card.forEach((singleCard , i)=>{
+  singleCard.addEventListener('click', (c)=>{
+      singleCard.classList.toggle('flip')
+  })
+})
